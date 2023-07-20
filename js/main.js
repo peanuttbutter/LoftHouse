@@ -4,14 +4,8 @@ const navIcon = document.querySelector('.nav-icon');
 const nav = document.querySelector('.header__top-row')
 const navList = document.querySelector('.nav__list')
 
-
-navBtn.onclick = function () {
-    mobileNav();
-}
-
-navList.onclick = function () {
-	mobileNav();
-}
+navBtn.addEventListener('click', mobileNav);
+navList.addEventListener('click', mobileNav);
 
 function mobileNav () {
 	nav.classList.toggle('header__top-row--mobile');
